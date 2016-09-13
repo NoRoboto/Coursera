@@ -9,3 +9,12 @@ To download the angular and other resources
 $ npm install
 $ bower install
 ```
+
+To run tests gulp and serve data (recommended):
+```sh
+$ gulp watch
+```
+To run tests with grunt and serve data ( not recommended )
+```sh
+$ grunt serve
+```
