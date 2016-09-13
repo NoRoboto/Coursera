@@ -14,7 +14,7 @@ To run gulp tasks and serve data:
 ```sh
 $ gulp 
 ```
-- Then, copy the contents of the "dist" folder to the "public" folder in "json-server", then run:
+- Then, copy the contents of the "dist" folder to the "public" folder in "json-server", then run  (inside the json-server folder):
 
 ```sh
 $ json-server --watch db.json
