@@ -14,7 +14,3 @@ To run gulp tasks and serve data (recommended):
 ```sh
 $ gulp watch
 ```
-To run tasks with grunt and serve data ( not recommended )
-```sh
-$ grunt serve
-```
