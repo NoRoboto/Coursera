@@ -30,7 +30,7 @@
                   <div class="media-left media-middle">
                       <a href="#">
                         <img class="media-object img-thumbnail"
-                         ng-src={{dish.image}} >
+                         ng-src={{dishDetailCtrl.dish.image}} >
                       </a>
                   </div>
                   <div class="media-body">
@@ -46,7 +46,7 @@
                   <p style="display: inline;">&#9776; Sort by</p>
                   <input style="display: inline;" type="text" placeholder="Criteria" ng-model="sort">
                   <p style="display: inline;">&#9978; Find:</p>
-                  <input style="display: inline;" type="text" placeholder="Criteria" ng-model="find">
+                  <input style="display: inline;" type="text" placeholder="Criteria | additional functionality" ng-model="find">
             </div>
             <div class="col-xs-9 col-xs-offset-1">
               <br>
@@ -70,7 +70,7 @@
         app.controller('dishDetailController', function() {
           this.sortCriteria = '';
           this.sort = "";
-          this.find ="";
+          this.find = ""; // additional functionality
             var dish={
                           name:'Uthapizza',
                           image: 'images/uthapizza.png',
