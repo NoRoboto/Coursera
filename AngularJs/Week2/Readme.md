@@ -22,11 +22,11 @@ $ sudo  npm install -g gulp
 $ npm install gulp --save-dev
 ```
 
-To run gulp tasks and serve data (recommended):
+To run gulp tasks and serve data:
 ```sh
 $ gulp watch
 ```
-To run tasks with grunt and serve data ( not recommended )
+To run tasks with grunt and serve data
 ```sh
 $ grunt serve
 ```
