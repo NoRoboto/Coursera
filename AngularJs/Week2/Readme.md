@@ -10,6 +10,18 @@ $ npm install
 $ bower install
 ```
 
+To install grunt
+```sh
+$ sudo npm install -g grunt-cli
+$ npm install grunt --save-dev
+```
+
+To install gulp
+```sh
+$ sudo  npm install -g gulp
+$ npm install gulp --save-dev
+```
+
 To run gulp tasks and serve data (recommended):
 ```sh
 $ gulp watch
