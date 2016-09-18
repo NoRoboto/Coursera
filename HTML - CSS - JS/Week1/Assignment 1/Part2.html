@@ -1,0 +1,128 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Assignment 1</title>
+    <style>
+      fieldset {
+        background: lightyellow;
+        border:10px solid yellow;
+        margin-bottom:10px;
+        width: 720px;
+      }
+
+      label {
+        width: 180px;
+        display: inline-block;
+        text-align: right;
+        vertical-align: top;
+      }
+
+      .check {
+         width:auto !important;
+       }
+
+       .text-range{
+         display: inline-block;
+         width: 50px;
+         text-align: center;
+         position: relative;
+         color: white;
+       }
+
+       .text-range-l{
+         background-color: Darkred;
+         margin-right: -10px;
+       }
+
+       .text-range-r{
+         background-color: BlueViolet;
+         margin-left: -10px;
+       }
+
+       .textarea{
+         width: 360px;
+         height: 50px;
+       }
+    </style>
+  </head>
+  <body>
+    <h1>Please Enter Your Details For Our Dating Website</h1>
+    <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" enctype="multipart/form-data" method="get">
+
+      <fieldset>
+        <legend>Your Face</legend>
+        <label for="avatar">Your image: </label>
+        <input type="file" name="avatar" id="avatar" required>
+        <br />
+        <label for="preview">Image preview:</label>
+        <img id="preview"/>
+      </fieldset>
+
+      <fieldset>
+          <legend>Your General Details</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <br />
+          <label for="gender">Gender:</label>
+          <input type="radio" name="gender" value="Male" />Male
+          <input type="radio" name="gender" value="Female" required/>Female
+          <br />
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required />
+          <br />
+          <label for="date">Date of birth:</label>
+          <input type="date" id="date" name="date" />
+          <br />
+          <label for="color">Favorite Color</label>
+          <input type="color" id="color" name="color" />
+          <br />
+          <label for="countries">Which country</label>
+          <select name="country" id="contries" />
+              <option value=""></option>
+              <option value="Colombia">Colombia</option>
+              <option value="United States">United States</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="Afghanistan">Afghanistan</option>
+              <option value="Albania">Albania</option>
+          </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your indicators</legend>
+
+        <label for="height">Height:</label>
+        <span class="text-range text-range-l">Short</span>
+        <input name="height" type="range" id="height" min="0" max="100" />
+        <span class="text-range text-range-r">Tall</span>
+        <br />
+
+        <label for="salary">Salary:</label>
+        <span class="text-range text-range-l">Poor</span>
+        <input name="salary" type="range" id="salary"  min="0" max="100" />
+        <span class="text-range text-range-r">Rich</span>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Contact Infirmation</legend>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required/>
+        <br />
+        <label for="mobile">Mobile:</label>
+        <input type="tel" name="mobile" id="mobile"/>
+        <br />
+        <label for="address">Address:</label>
+        <textarea class="textarea" type="text" name="address" id="address"></textarea>
+        <br />
+        <label class="check" for="contact">Method to contact you:</label>
+        <input type="checkbox" name="contact1" id="contact1" value="email" />Email
+        <input type="checkbox" name="contact2" id="contact2" value="whatsapp" />Whatsapp
+        <input type="checkbox" name="contact3" id="contact3" value="in-app chat"/>In-app chat
+
+      </fieldset>
+
+      <button type="submint" >Submit</button>
+
+    </form>
+  </body>
+  <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+</html>
