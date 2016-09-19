@@ -1,0 +1,30 @@
+ · 14 hours ago · Edited
+
+Apologies, it seems that I skipped some code. It seems that the problem is encountering because a some kind of ui-router and ngMock conflict.
+
+Try using these steps:
+
+1. Run the "bower update" or deleting the bower components and running the "bower install" with the previous dependency versions.
+
+2. Add this code to the test case (this will discard the ui-router and ngMock conflict errors):
+
+beforeEach(function() {
+
+    inject(function(_$rootScope_, _$state_, _$injector_, $templateCache) {
+      $rootScope = _$rootScope_;
+      $state = _$state_;
+      $injector = _$injector_;
+
+      // We need add the template entry into the templateCache if we ever
+      // specify a templateUrl
+      $templateCache.put('views/header.html', '');
+      $templateCache.put('views/home.html', '');
+      $templateCache.put('views/footer.html', '');
+    })
+  });
+
+"
+ "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "angular-resource": "^1.5.8",
+    "angular-mocks": "^1.5.8"
