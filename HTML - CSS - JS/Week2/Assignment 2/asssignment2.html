@@ -1,0 +1,47 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Assignment 2</title>
+    <style>
+
+    fieldset {
+      width: 320px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .fieldset1 {
+      border:10px solid red;
+    }
+
+    .fieldset2 {
+      border:10px solid blue;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    label {
+      display: flex;
+      text-align: right;
+    }
+
+    </style>
+  </head>
+  <body>
+    <h2>Color guessing game</h2>
+    <fieldset class="fieldset1">
+      <legend>Game Panel</legend>
+      <button onclick="start()">New Game</button>
+      <button onclick="reset()">Reset Information</button>
+    </fieldset>
+    <fieldset class="fieldset2">
+      <legend>Game info</legend>
+      <label id="name">Player Name:</label>
+      <label id="guesses">Actual guesses: 0</label>
+      <label id="games">Total Games: 0</label>
+    </fieldset>
+    <script src="guessing_game.js"></script>
+  </body>
+</html>
