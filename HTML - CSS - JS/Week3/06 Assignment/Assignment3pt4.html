@@ -42,14 +42,19 @@
           if(newGame == true){
             location.reload(); // reload page
           }else {
-            img.onclick = null;
+
+            for (var i = 0; i < leftSide.children.length; i++) { // remove event
+              leftSide.children[i].onclick = null;
+            }
+
             theLeftSide.lastChild.onclick = null;
           };
         };
-        theLeftSide.appendChild(img);
-      }
+        theLeftSide.appendChild(img)
+      };
 
       var leftSideImages = theLeftSide.cloneNode(true);
+      leftSideImages.id = "copyLeft";
       leftSideImages.removeChild(leftSideImages.lastChild);
       theRightSide.appendChild(leftSideImages.cloneNode(true));
 
