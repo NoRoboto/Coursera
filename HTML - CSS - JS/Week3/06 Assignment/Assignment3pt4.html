@@ -37,7 +37,7 @@
         img.src = "http://home.cse.ust.hk/~rossiter/mooc/matching_game/smile.png";
         img.style.top = Math.random() * 401;
         img.style.left = Math.random() * 401;
-        img.onclick = function gameOver(event){
+        img.onclick = function gameOver(event){ // https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode
           var newGame = confirm("Game Over!, Play again ? ");
           if(newGame == true){
             location.reload(); // reload page
