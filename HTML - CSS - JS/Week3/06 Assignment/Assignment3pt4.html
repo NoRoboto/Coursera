@@ -34,9 +34,18 @@
     function generateFaces(){
       for (i = 0; i < numberOfFaces; i++) {
         var img = document.createElement("img");
-        img.src = "smile.png";
+        img.src = "http://home.cse.ust.hk/~rossiter/mooc/matching_game/smile.png";
         img.style.top = Math.random() * 401;
         img.style.left = Math.random() * 401;
+        img.onclick = function gameOver(event){
+          var newGame = confirm("Game Over!, Play again ? ");
+          if(newGame == true){
+            location.reload(); // reload page
+          }else {
+            img.onclick = null;
+            theLeftSide.lastChild.onclick = null;
+          };
+        };
         theLeftSide.appendChild(img);
       }
 
@@ -49,16 +58,6 @@
           numberOfFaces += 5;
           cleanStage();
           generateFaces();
-      };
-    };
-
-    theBody.onclick = function gameOver(){
-      var newGame = confirm("Game Over!, Play again ? ");
-      if(newGame == true){
-        location.reload(); // reload page
-      }else {
-        theBody.onclick = null;
-        theLeftSide.lastChild.onclick = null;
       };
     };
 

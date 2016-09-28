@@ -39,7 +39,6 @@
     <fieldset class="fieldset2">
       <legend>Game info</legend>
       <label id="name">Player Name:</label>
-      <label id="guesses">Actual guesses: 0</label>
       <label id="games">Total Games: 0</label>
     </fieldset>
     <script>
@@ -52,7 +51,6 @@
     var guess_input_text;
     var guess_input= "";
     var finished = false;
-    var guesses = 0;
     var total_games = 0;
     var colors;
 
@@ -66,14 +64,12 @@
 
     function showInfo(){
       document.getElementById('name').innerHTML = 'Player Name: '+name; // change label content
-      document.getElementById('guesses').innerHTML = 'Actual guesses: '+guesses; // change label content
       document.getElementById('games').innerHTML = 'Total Games: '+total_games; // change label content
     }
 
     function newGame(){
       var target = 0;
       finished = false;
-      guesses = 0;
     }
 
     function reset(){
@@ -95,7 +91,6 @@
                                       colors.join()+"\n"+
                                       "What is the color?");
             guess_input = String(guess_input_text);
-            guesses += 1;
             if (colors.indexOf(guess_input) == target) break;
         }
     }
