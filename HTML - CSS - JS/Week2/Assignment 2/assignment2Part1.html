@@ -1,0 +1,104 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Assignment 2</title>
+    <style>
+
+    fieldset {
+      width: 320px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .fieldset1 {
+      border:10px solid red;
+    }
+
+    .fieldset2 {
+      border:10px solid blue;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    label {
+      display: flex;
+      text-align: right;
+    }
+
+    </style>
+  </head>
+  <body>
+    <h2>Color guessing game</h2>
+    <fieldset class="fieldset1">
+      <legend>Game Panel</legend>
+      <button onclick="start()">New Game</button>
+      <button onclick="reset()">Reset Information</button>
+    </fieldset>
+    <fieldset class="fieldset2">
+      <legend>Game info</legend>
+      <label id="name">Player Name:</label>
+      <label id="guesses">Actual guesses: 0</label>
+      <label id="games">Total Games: 0</label>
+    </fieldset>
+    <script>
+
+    /*
+      Global variables.
+    */
+
+    var target = 0;
+    var guess_input_text;
+    var guess_input= "";
+    var finished = false;
+    var guesses = 0;
+    var total_games = 0;
+    var colors;
+
+    function start(){
+      name = prompt("Player name");
+      total_games += 1;
+      newGame();
+      showInfo();
+      do_game();
+    }
+
+    function showInfo(){
+      document.getElementById('name').innerHTML = 'Player Name: '+name; // change label content
+      document.getElementById('guesses').innerHTML = 'Actual guesses: '+guesses; // change label content
+      document.getElementById('games').innerHTML = 'Total Games: '+total_games; // change label content
+    }
+
+    function newGame(){
+      var target = 0;
+      finished = false;
+      guesses = 0;
+    }
+
+    function reset(){
+      newGame();
+      name = "";
+      total_games = 0;
+      showInfo();
+      //document.body.style.backgroundColor = "white";
+    }
+
+    function do_game() {
+        colors = ["aqua","black","blue","cyan","fuchsia","gold","green","magenta","orange","pink","yellow"];
+        var random_number = Math.random() * colors.length;
+        var random_number_integer = Math.floor(random_number);
+        target = random_number_integer;
+        console.log("Answer: "+colors[target]);
+        while (!finished) {
+            guess_input_text = prompt("I am thinking of a color: "+
+                                      colors.join()+"\n"+
+                                      "What is the color?");
+            guess_input = String(guess_input_text);
+            guesses += 1;
+            if (colors.indexOf(guess_input) == target) break;
+        }
+    }
+    </script>
+  </body>
+</html>
