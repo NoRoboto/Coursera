@@ -11,4 +11,4 @@ A compilation of resources such as Tasks , workshops and assignments.
 ### Courses in progress:
 
 ![N|Solid](https://gwhosaidthat.herokuapp.com/assets/icons/icon_bootstrap-a5738cd6a56f7eff178cd590bc9411ed.png)
-**Front-end Web UI Frameworks Overview**  - [Go to course](https://www.coursera.org/learn/web-frameworks) ||  [Go to resource](https://github.com/NoRoboto/Coursera/tree/master/https://github.com/NoRoboto/Coursera/tree/master/Front-end Web UI Frameworks).
+**Front-end Web UI Frameworks Overview**  - [Go to course](https://www.coursera.org/learn/web-frameworks) ||  [Go to resource](https://github.com/NoRoboto/Coursera/tree/master/Front-end Web UI Frameworks).
