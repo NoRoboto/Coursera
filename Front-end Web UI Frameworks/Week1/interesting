@@ -1,0 +1,2 @@
+* Container should always be applied to the outermost element enclosing rows and columns.
+https://scotch.io/tutorials/understanding-the-bootstrap-3-grid-system

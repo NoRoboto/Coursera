@@ -1,0 +1,5 @@
+* The 5 Most Popular Frontend Frameworks of 2014 Compared (a recent opinion piece comparing the most popular front-end UI frameworks).
+http://www.sitepoint.com/5-most-popular-frontend-frameworks-compared/
+* Front-end Frameworks v2.5 and comparison (yet another recent comparison of front-end frameworks).
+http://usablica.github.io/front-end-frameworks/
+http://usablica.github.io/front-end-frameworks/compare.html
