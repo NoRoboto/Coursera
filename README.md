@@ -8,7 +8,7 @@ A compilation of resources such as Tasks , workshops and assignments.
 
  ![N|Solid](https://cdn0.iconfinder.com/data/icons/HTML5/64/HTML_Logo.png) **HTML, CSS, JS**  - [Go to course](https://www.coursera.org/learn/html-css-javascript) ||  [Go to resource](https://github.com/NoRoboto/Coursera/tree/master/HTML%20-%20CSS%20-%20JS).
  
- ![N|Solid](https://gwhosaidthat.herokuapp.com/assets/icons/icon_bootstrap-a5738cd6a56f7eff178cd590bc9411ed.png)
+ ![N|Solid](http://files.softicons.com/download/social-media-icons/classic-social-media-icons-by-brainleaf/png/64x64/bootstrap-icon.png)
 **Front-end Web UI Frameworks Overview**  - [Go to course](https://www.coursera.org/learn/web-frameworks) ||  [Go to resource](https://github.com/NoRoboto/Coursera/tree/master/Front-end Web UI Frameworks).
 
 ### Courses in progress:
