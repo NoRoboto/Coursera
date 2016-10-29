@@ -35,3 +35,4 @@ Run
 $ json-server --watch db.json
 ```
 Serve new content in "public" folder (create if does not exist).
+
