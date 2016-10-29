@@ -5,27 +5,32 @@
 To install, deploy and run ionic
 
 **run** (sudo if required, you need npm to install ionic and bower to this course ):
+
 ```sh
 $ npm install -g grunt-cli
 $ npm install cordova ionic -g
 ```
 
 Create a new proyect (name) with template , e.g:
+
 ```sh
 $ ionic start conFusion sidemenu
 ```
 
 To serve app
+
 ```sh
 $  ionic serve
 ```
 
 To install json-server
+
 ```sh
 $ npm install json-server -g
 ```
 
 Run
+
 ```sh
 $ json-server --watch db.json
 ```
