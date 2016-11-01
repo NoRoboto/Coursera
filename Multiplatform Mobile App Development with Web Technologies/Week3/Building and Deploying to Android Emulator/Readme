@@ -1,0 +1,10 @@
+1- Add platform
+ionic platform add android
+2- Build
+ionic build android
+3- test on emulator
+ionic emulate android
+
+
+* list virtual devices
+android avd

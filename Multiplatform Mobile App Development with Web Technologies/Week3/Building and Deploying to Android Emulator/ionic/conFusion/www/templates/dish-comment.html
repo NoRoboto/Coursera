@@ -1,0 +1,39 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Submit Comment on Dish</h1>
+    <div class="buttons">
+      <button class="button button-light" ng-click="closeCommentModal()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form id="commentForm" role="form" name="form.dishcomment" ng-submit="submitComment()" novalidate>
+      <div class="list">
+        <label class="item item-input item-select">
+          <span class="input-label">Rating</span>
+            <select ng-model="mycomment.rating">
+                <option ng-repeat="n in [1,2,3,4,5]" value="{{n}}" required>{{n}}</option>
+            </select>
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Your Name</span>
+          <input type="text" id="author" name="author" ng-model="mycomment.author" required>
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Your Comment</span>
+          <input type="text" id="comment" name="comment" ng-model="mycomment.comment" required>
+        </label>
+        <div class="list" ng-show="form.dishcomment.$invalid && !form.dishcomment.author.$pristine">
+          <div class="bar bar-assertive" ng-show="form.dishcomment.author.$error.required && !form.dishcomment.author.$pristine">
+              <h1 class="title">Author name is required</h1>
+          </div>
+          <div class="bar bar-assertive" ng-show="form.dishcomment.comment.$error.required && !form.dishcomment.comment.$pristine">
+              <h1 class="title">Comment is required</h1>
+          </div>
+        </div>
+        <label class="item">
+          <button class="button button-block button-positive" ng-disabled="form.dishcomment.$invalid" type="submit">Submit</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>
