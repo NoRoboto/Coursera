@@ -1,0 +1,5 @@
+Camera plugin
+ionic plugin add cordova-plugin-camera
+
+or use the followingo if cordova version is below 5.0:
+ionic plugin add org.apache.cordova.camera

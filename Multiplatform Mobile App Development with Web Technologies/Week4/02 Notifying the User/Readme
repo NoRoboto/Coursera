@@ -1,0 +1,5 @@
+Notification ionic
+ionic plugin add de.appplant.cordova.plugin.local-notification
+
+Toast
+ionic plugin add https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin.git

@@ -1,0 +1,5 @@
+1- Add platform run "ionic platform add android"
+2- run "ionic resources"
+
+To add a ionic-cordova plugin
+- ionic plugin add ....
