@@ -12,7 +12,7 @@ A compilation of resources such as Tasks , workshops and assignments.
 **Front-end Web UI Frameworks Overview**  - [Go to course](https://www.coursera.org/learn/web-frameworks) ||  [Go to resource](https://github.com/NoRoboto/Coursera/tree/master/Front-end Web UI Frameworks).
 
  ![N|Solid](http://d2.alternativeto.net/dist/icons/ionic_91428.png?width=64&height=64&mode=crop&upscale=false)
-**Multiplatform Mobile App Development with Web Technologies**  - [Go to course](https://www.coursera.org/learn/hybrid-mobile-development) ||  [Go to resource]().
+**Multiplatform Mobile App Development with Web Technologies**  - [Go to course](https://www.coursera.org/learn/hybrid-mobile-development) ||  [Go to resource](https://github.com/NoRoboto/Coursera/tree/master/Multiplatform Mobile App Development with Web Technologies).
 
 ### Courses in progress:
 
