@@ -11,8 +11,10 @@ A compilation of resources such as Tasks , workshops and assignments.
  ![N|Solid](http://files.softicons.com/download/social-media-icons/classic-social-media-icons-by-brainleaf/png/64x64/bootstrap-icon.png)
 **Front-end Web UI Frameworks Overview**  - [Go to course](https://www.coursera.org/learn/web-frameworks) ||  [Go to resource](https://github.com/NoRoboto/Coursera/tree/master/Front-end Web UI Frameworks).
 
-### Courses in progress:
-
  ![N|Solid](http://d2.alternativeto.net/dist/icons/ionic_91428.png?width=64&height=64&mode=crop&upscale=false)
 **Multiplatform Mobile App Development with Web Technologies**  - [Go to course](https://www.coursera.org/learn/hybrid-mobile-development) ||  [Go to resource]().
+
+### Courses in progress:
+
+
 
